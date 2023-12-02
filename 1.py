@@ -6,7 +6,7 @@ import re
 _DIGIT_PATTERN = re.compile(r"[a-z]*([1-9])(?:.*([1-9]))?")
 _WORD_DIGIT_SUBPATTERN = r"((?:one)|(?:two)|(?:three)|(?:four)|(?:five)|(?:six)|(?:seven)|(?:eight)|(?:nine)|[1-9])"
 _WORD_DIGIT_PATTERN = re.compile(
-    f"{_WORD_DIGIT_SUBPATTERN}(?:.*{_WORD_DIGIT_SUBPATTERN})"
+    f"{_WORD_DIGIT_SUBPATTERN}(?:.*{_WORD_DIGIT_SUBPATTERN})?"
 )
 
 _vals = {
